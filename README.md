@@ -21,7 +21,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  simple_phone_countries: ^0.0.1
+  simple_phone_countries: ^1.0.0
 ```
 
 Then run:
@@ -239,7 +239,7 @@ Most country picker packages require async loading of JSON data. This package:
 1. **Pre-compiles all data** into Dart enums
 2. **Loads instantly** with no Future/await needed
 3. **Type-safe** with compile-time checks
-4**Better performance** for country pickers and phone inputs
+4. **Better performance** for country pickers and phone inputs
 
 ## Credits
 
