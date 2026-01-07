@@ -11,6 +11,9 @@ class CountryFilterOptions {
   /// Whether to filter by dial code.
   final bool byDialCode;
 
+  /// Creates a new [CountryFilterOptions] instance.
+  ///
+  /// By default, only [byName] is enabled.
   const CountryFilterOptions({
     this.byName = true,
     this.byCode = false,
