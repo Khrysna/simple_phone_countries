@@ -1,0 +1,30 @@
+name: simple_phone_countries
+description: "A simple, synchronous Flutter package for phone country codes, dial codes, and SVG country flags"
+version: 1.0.0
+homepage: https://github.com/Khrysna/simple_phone_countries
+repository: https://github.com/Khrysna/simple_phone_countries
+issue_tracker: https://github.com/Khrysna/simple_phone_countries/issues
+
+topics:
+  - phone
+  - country
+  - dial-code
+  - flags
+  - country-picker
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  assets:
+    - assets/flags/

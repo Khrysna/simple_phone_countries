@@ -1,0 +1,11 @@
+include: package:flutter_lints/flutter.yaml
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+
+linter:
+  rules:
+    # ISO country codes are uppercase by standard (ISO 3166-1 alpha-2)
+    constant_identifier_names: false
+    # Example files use print for demonstration
+    avoid_print: false
