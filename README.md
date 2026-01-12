@@ -48,6 +48,29 @@ print(indonesia.dialCode); // +62
 print(indonesia.code);     // ID
 ```
 
+### Get All Countries
+
+```dart
+// Get all countries
+final allCountries = PhoneCountries.all;
+
+// Get total count
+final count = PhoneCountries.count;
+```
+
+## CountryCode Enum
+
+The `CountryCode` enum provides instant access to all country data:
+
+```dart
+CountryCode.ID  // Indonesia
+CountryCode.US  // United States
+CountryCode.GB  // United Kingdom
+CountryCode.JP  // Japan
+CountryCode.CN  // China
+// ... 240+ countries
+```
+
 ### Search Countries
 
 ```dart
@@ -158,29 +181,6 @@ SvgPicture.asset(
   width: 32,
   height: 24,
 )
-```
-
-### Get All Countries
-
-```dart
-// Get all countries
-final allCountries = PhoneCountries.all;
-
-// Get total count
-final count = PhoneCountries.count;
-```
-
-## CountryCode Enum
-
-The `CountryCode` enum provides instant access to all country data:
-
-```dart
-CountryCode.ID  // Indonesia
-CountryCode.US  // United States
-CountryCode.GB  // United Kingdom
-CountryCode.JP  // Japan
-CountryCode.CN  // China
-// ... 240+ countries
 ```
 
 ### CountryCode Properties
