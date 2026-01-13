@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.2
+
+### Changed
+- Applied `dart format` to entire codebase for consistent code style
+- Improved code analysis score
+
 ## 1.0.1
 
 ### Added
