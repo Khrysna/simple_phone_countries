@@ -5,6 +5,14 @@ A simple, synchronous Flutter package for phone country codes, dial codes, and S
 [![pub package](https://img.shields.io/pub/v/simple_phone_countries.svg)](https://pub.dev/packages/simple_phone_countries)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_1.png" width="250" alt="Screenshot 1"/>
+  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_2.png" width="250" alt="Screenshot 2"/>
+  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_3.png" width="250" alt="Screenshot 3"/>
+</p>
+
 ## Features
 
 - ✅ **No async loading** - Access country data instantly via enum
@@ -21,7 +29,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  simple_phone_countries: ^1.0.0
+  simple_phone_countries: ^1.0.2
 ```
 
 Then run:
