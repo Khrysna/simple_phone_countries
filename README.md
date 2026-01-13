@@ -8,9 +8,9 @@ A simple, synchronous Flutter package for phone country codes, dial codes, and S
 ## Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_1.png" width="250" alt="Screenshot 1"/>
-  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_2.png" width="250" alt="Screenshot 2"/>
-  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_3.png" width="250" alt="Screenshot 3"/>
+  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_1.jpg" width="250" alt="Screenshot 1"/>
+  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_2.jpg" width="250" alt="Screenshot 2"/>
+  <img src="https://raw.githubusercontent.com/Khrysna/simple_phone_countries/main/screenshots/screenshot_3.jpg" width="250" alt="Screenshot 3"/>
 </p>
 
 ## Features
