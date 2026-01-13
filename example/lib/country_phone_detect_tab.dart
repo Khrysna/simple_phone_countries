@@ -40,7 +40,7 @@ class _CountryPhoneDetectTabState extends State<CountryPhoneDetectTab> {
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16.0),
       child: Column(
-        crossAxisAlignment: .start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         spacing: 16,
         children: [
           Text(
