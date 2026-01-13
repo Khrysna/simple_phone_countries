@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:simple_phone_countries/simple_phone_countries.dart';
 
 import 'widgets/widgets.dart';
@@ -41,7 +41,9 @@ class _SectionHeader extends StatelessWidget {
       color: Theme.of(context).colorScheme.surfaceContainer,
       child: Text(
         letter,
-        style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
+        style: Theme.of(
+          context,
+        ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
       ),
     );
   }

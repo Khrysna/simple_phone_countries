@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:simple_phone_countries/simple_phone_countries.dart';
 
 import 'widgets/widgets.dart';
@@ -33,7 +33,10 @@ class _CountrySearchTabState extends State<CountrySearchTab> {
       if (query.isEmpty) {
         _results = PhoneCountries.all.sortedByName();
       } else {
-        _results = PhoneCountries.all.filter(query: query, filterOptions: CountryFilterOptions.all);
+        _results = PhoneCountries.all.filter(
+          query: query,
+          filterOptions: CountryFilterOptions.all,
+        );
       }
     });
   }
@@ -49,7 +52,9 @@ class _CountrySearchTabState extends State<CountrySearchTab> {
             decoration: InputDecoration(
               hintText: 'Search by name, code, or dial code...',
               prefixIcon: const Icon(Icons.search),
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
             ),
             onChanged: _onSearch,
           ),

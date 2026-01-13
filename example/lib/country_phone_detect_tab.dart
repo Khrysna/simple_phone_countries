@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:simple_phone_countries/simple_phone_countries.dart';
 
 import 'widgets/widgets.dart';
@@ -43,19 +43,27 @@ class _CountryPhoneDetectTabState extends State<CountryPhoneDetectTab> {
         crossAxisAlignment: .start,
         spacing: 16,
         children: [
-          Text('Detect Country from Phone Number', style: Theme.of(context).textTheme.titleLarge),
+          Text(
+            'Detect Country from Phone Number',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
           TextField(
             controller: _phoneController,
             decoration: InputDecoration(
               hintText: 'Enter phone number',
               prefixIcon: const Icon(Icons.phone),
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
             ),
             keyboardType: TextInputType.phone,
             onChanged: (_) => _detectCountry(),
           ),
           if (_detectedCountry != null) ...{
-            _DetectedCountryCard(country: _detectedCountry!, localNumber: _localNumber),
+            _DetectedCountryCard(
+              country: _detectedCountry!,
+              localNumber: _localNumber,
+            ),
           } else if (_phoneController.text.isNotEmpty) ...{
             const _NoDetectionCard(),
           },
@@ -69,7 +77,10 @@ class _DetectedCountryCard extends StatelessWidget {
   final CountryCode country;
   final String? localNumber;
 
-  const _DetectedCountryCard({required this.country, required this.localNumber});
+  const _DetectedCountryCard({
+    required this.country,
+    required this.localNumber,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +91,10 @@ class _DetectedCountryCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 12,
           children: [
-            Text('Detected Country:', style: Theme.of(context).textTheme.titleMedium),
+            Text(
+              'Detected Country:',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
             Row(
               spacing: 16,
               children: [
@@ -89,7 +103,10 @@ class _DetectedCountryCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(country.name, style: Theme.of(context).textTheme.titleMedium),
+                      Text(
+                        country.name,
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
                       Text(
                         '${country.code} • ${country.dialCode}',
                         style: Theme.of(context).textTheme.bodyMedium,
@@ -100,7 +117,10 @@ class _DetectedCountryCard extends StatelessWidget {
               ],
             ),
             if (localNumber != null) ...[
-              Text('Local Number: $localNumber', style: Theme.of(context).textTheme.bodyMedium),
+              Text(
+                'Local Number: $localNumber',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
             ],
           ],
         ),
@@ -122,7 +142,9 @@ class _NoDetectionCard extends StatelessWidget {
           children: [
             Icon(Icons.info_outline, color: Colors.orange),
             const Expanded(
-              child: Text('Could not detect country. Make sure the number not start with 0'),
+              child: Text(
+                'Could not detect country. Make sure the number not start with 0',
+              ),
             ),
           ],
         ),
