@@ -47,7 +47,7 @@ class _CountryPhoneDetectTabState extends State<CountryPhoneDetectTab> {
           TextField(
             controller: _phoneController,
             decoration: InputDecoration(
-              hintText: 'Enter phone number (e.g., +6281234567890)',
+              hintText: 'Enter phone number',
               prefixIcon: const Icon(Icons.phone),
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             ),
