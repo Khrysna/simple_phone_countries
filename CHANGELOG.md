@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.3
+
+### Added
+- Added screenshots to README documentation
+- Improved code analysis score
+
 ## 1.0.2
 
 ### Changed

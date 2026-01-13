@@ -29,7 +29,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  simple_phone_countries: ^1.0.2
+  simple_phone_countries: ^1.0.3
 ```
 
 Then run:
